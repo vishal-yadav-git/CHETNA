@@ -1,0 +1,25 @@
+<form method="post">
+  {% csrf_token %}
+  
+  <label for="role">Register As:</label>
+  <select name="role" required>
+    <option value="Students">Student</option>
+    <option value="faculty">Faculty</option>
+    <option value="Principal">Principal</option>
+  </select>
+  <br><br>
+  NAME:-
+  <input type="text" name="Firstname" placeholder="First Name" required><br>
+  LASTNAME:-
+  <input type="text" name="Lastname" placeholder="Last Name" required><br>
+  MOBILE NO :-
+  <input type="text" name="mobile" placeholder="mobile no"><br>
+  EMAIL ID:-
+  <input type="email" name="Email" placeholder="Email" required><br>
+  PASSWORD :- 
+  <input type="password" name="Password" placeholder="Password" required><br>
+  ADD:-
+  <textarea name="Add" placeholder="Address"></textarea><br>
+
+  <button type="submit">Register</button>
+</form>
